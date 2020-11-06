@@ -20,17 +20,17 @@ namespace VisitorPatternDemo2.Visitors
         public void visit(Customer customer)
         {
             Console.WriteLine();
-            Console.WriteLine("- Name: {0}",customer.getName());
+            Console.WriteLine("- Name: {0}",customer.Name);
             customersNo++;
         }
         public void visit(Order order)
         {
-            Console.WriteLine("-- Order: {0}", order.getName());
+            Console.WriteLine("-- Order: {0}", order.Name);
             ordersNo++;
         }
         public void visit(Item item)
         {
-            Console.WriteLine("--- Item: {0}", item.getName());
+            Console.WriteLine("--- Item: {0}", item.Name);
             itemsNo++;
         }
 

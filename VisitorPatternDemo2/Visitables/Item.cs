@@ -17,13 +17,10 @@ namespace VisitorPatternDemo2.Visitables
         {
             visitor.visit(this);
         }
-        public string getName()
+        public string Name
         {
-            return name;
-        }
-        public void setName(string name)
-        {
-            this.name = name;
+            get { return name; }
+            set { name = value; }
         }
     }
 }

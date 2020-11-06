@@ -13,10 +13,9 @@ namespace VisitorPatternDemo1
             Membership gold = new GoldMembership();
 
             IVisitor visitor = new Thriller();
+
             bronze.accept(visitor);
-
             silver.accept(visitor);
-
             gold.accept(visitor);
 
             Console.WriteLine("Monthly payment: {0}", bronze.Monthlypaymeny);

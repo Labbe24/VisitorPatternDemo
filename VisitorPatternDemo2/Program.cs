@@ -21,7 +21,6 @@ namespace VisitorPatternDemo2
             order1.addItem(new Item("Pocket Explosive"));
             order1.addItem(new Item("Tazer"));
             customer1.addOrder(order1);
-            
 
             Order order2 = new Order("Equipment");
             order2.addItem(new Item("Web Shooter"));

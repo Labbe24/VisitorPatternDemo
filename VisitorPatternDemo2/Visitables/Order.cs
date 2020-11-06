@@ -22,14 +22,10 @@ namespace VisitorPatternDemo2.Visitables
         private string name;
         private List<Item> items;
 
-        public string getName()
+        public string Name
         {
-            return name;
-        }
-
-        public void setName(string name)
-        {
-            this.name = name;
+            get { return name; }
+            set { name = value; }
         }
 
         public void accept(IVisitor visitor)
